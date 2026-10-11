@@ -2,6 +2,8 @@
 
 Minimalist, high-impact web application for clean-air pedestrian and cyclist routing, micro-pollution incident reporting, and pristine getaway discovery across India.
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NeeliSaiHakesh/smogroute)
+
 ---
 
 ## Overview
