@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+  --border-subtle: #e5e7eb;
+  --card-bg: #ffffff;
+  --canvas-bg: #f9fafb;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.011em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Strict maximum 2 font weights throughout app: regular (400) and medium (500) */
+* {
+  font-weight: 400;
+}
+.font-medium, strong, th, h1, h2, h3, h4, .font-semibold, .font-bold {
+  font-weight: 500 !important;
+}
+
+/* Full-screen Leaflet map styling */
+.leaflet-container {
+  width: 100vw;
+  height: 100vh;
+  background: #f3f4f6 !important;
+  font-family: inherit;
+}
+
+.leaflet-control-zoom {
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+  background: #ffffff !important;
+}
+
+.leaflet-control-zoom a {
+  background: #ffffff !important;
+  color: #374151 !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #f9fafb !important;
+  color: #111827 !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.85) !important;
+  color: #6b7280 !important;
+  font-size: 10px !important;
+  border-top-left-radius: 6px;
+  padding: 2px 6px !important;
+  border: 1px solid #e5e7eb;
+}
+
+.leaflet-control-attribution a {
+  color: #4b5563 !important;
+}
+
+/* Custom light popup styling */
+.leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #e5e7eb !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb;
+}
+
+/* Custom clean scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9fafb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
